@@ -270,7 +270,7 @@ const BNPL = {
   },
 
   addMarkTo(element, styles = {}) {
-    if (element instanceof Element == false) {
+    if (element instanceof Element == false || element.querySelector('[paypal-mark-container]') !== null) {
       return;
     }
 
